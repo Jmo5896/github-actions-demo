@@ -7,6 +7,7 @@ on:
     branches:
       - develop
       - staging
+      - main
 
 jobs:
   test:
@@ -25,3 +26,9 @@ jobs:
 
       - name: Run Linter
         run: npm run lint
+
+      - name: Create Build I guess
+        run: npm run build
+
+      - name: Testing all of the things
+        run: npm run test
